@@ -1,0 +1,152 @@
+[
+  {
+    "id": "chicken_parmesan",
+    "bounds": [
+      0.09792,
+      0.030737,
+      0.065965
+    ],
+    "source": "Asta_test/Assets/Buffet/Food/Resources/Food/chicken_parmesan.fbx",
+    "bytes": 5030148
+  },
+  {
+    "id": "pizza",
+    "bounds": [
+      0.14027,
+      0.021397,
+      0.139372
+    ],
+    "source": "Asta_test/Assets/Buffet/Food/Resources/Food/pizza.fbx",
+    "bytes": 2431612
+  },
+  {
+    "id": "burger",
+    "bounds": [
+      0.09711,
+      0.066892,
+      0.094997
+    ],
+    "source": "Asta_test/Assets/Buffet/Food/Resources/Food/burger.fbx",
+    "bytes": 3971224
+  },
+  {
+    "id": "salmon",
+    "bounds": [
+      0.07979,
+      0.026401,
+      0.045451
+    ],
+    "source": "Asta_test/Assets/Buffet/Food/Resources/Food/salmon.fbx",
+    "bytes": 3784588
+  },
+  {
+    "id": "beef_skewer",
+    "bounds": [
+      0.142,
+      0.030596,
+      0.029393
+    ],
+    "source": "Asta_test/Assets/Buffet/Food/Resources/Food/beef_skewer.fbx",
+    "bytes": 2907188
+  },
+  {
+    "id": "rice",
+    "bounds": [
+      0.05813,
+      0.027422,
+      0.058081
+    ],
+    "source": "Asta_test/Assets/Buffet/Food/Resources/Food/rice.fbx",
+    "bytes": 3679840
+  },
+  {
+    "id": "pasta",
+    "bounds": [
+      0.06853,
+      0.017181,
+      0.071724
+    ],
+    "source": "Asta_test/Assets/Buffet/Food/Resources/Food/pasta.fbx",
+    "bytes": 3030156
+  },
+  {
+    "id": "broccoli",
+    "bounds": [
+      0.07751,
+      0.032077,
+      0.050483
+    ],
+    "source": "Asta_test/Assets/Buffet/Food/Resources/Food/broccoli.fbx",
+    "bytes": 3787000
+  },
+  {
+    "id": "roasted_carrots",
+    "bounds": [
+      0.05496,
+      0.019343,
+      0.061633
+    ],
+    "source": "Asta_test/Assets/Buffet/Food/Resources/Food/roasted_carrots.fbx",
+    "bytes": 3367976
+  },
+  {
+    "id": "mashed_potatoes",
+    "bounds": [
+      0.06089,
+      0.030119,
+      0.050718
+    ],
+    "source": "Asta_test/Assets/Buffet/Food/Resources/Food/mashed_potatoes.fbx",
+    "bytes": 2713604
+  },
+  {
+    "id": "kale_salad",
+    "bounds": [
+      0.0706,
+      0.027149,
+      0.059037
+    ],
+    "source": "Asta_test/Assets/Buffet/Food/Resources/Food/kale_salad.fbx",
+    "bytes": 3333968
+  },
+  {
+    "id": "bread_roll",
+    "bounds": [
+      0.07199,
+      0.05198,
+      0.062706
+    ],
+    "source": "Asta_test/Assets/Buffet/Food/Resources/Food/bread_roll.fbx",
+    "bytes": 2922148
+  },
+  {
+    "id": "fruit_salad",
+    "bounds": [
+      0.07091,
+      0.033939,
+      0.063822
+    ],
+    "source": "Asta_test/Assets/Buffet/Food/Resources/Food/fruit_salad.fbx",
+    "bytes": 3594204
+  },
+  {
+    "id": "chocolate_cake",
+    "bounds": [
+      0.05902,
+      0.062636,
+      0.046004
+    ],
+    "source": "Asta_test/Assets/Buffet/Food/Resources/Food/chocolate_cake.fbx",
+    "bytes": 4072824
+  },
+  {
+    "id": "cookie",
+    "bounds": [
+      0.07037,
+      0.011431,
+      0.068956
+    ],
+    "source": "Asta_test/Assets/Buffet/Food/Resources/Food/cookie.fbx",
+    "bytes": 3004392
+  }
+]

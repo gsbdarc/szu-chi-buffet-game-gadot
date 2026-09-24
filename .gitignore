@@ -1,0 +1,17 @@
+.godot/
+.venv/
+__pycache__/
+*.pyc
+*.import
+# Textures extracted automatically from the committed GLBs by Godot.
+assets/food/*.png
+assets/environment/*.png
+.DS_Store
+artifacts/
+dist/
+_site/
+web/engine/
+server/data/
+*.sqlite*
+.env
+.env.*

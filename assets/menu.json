@@ -1,0 +1,157 @@
+{
+  "foods": [
+    {
+      "id": "chicken_parmesan",
+      "name": "Chicken parmesan",
+      "category": "MAINS",
+      "description": "Golden breaded chicken with tomato sauce, melted mozzarella and fresh basil.",
+      "portionLabel": "1 piece",
+      "ingredients": "Chicken, breadcrumbs, tomato, mozzarella, basil. Contains wheat, milk and egg.",
+      "radius": 0.048,
+      "mass": 0.085
+    },
+    {
+      "id": "pizza",
+      "name": "Pepperoni pizza",
+      "category": "MAINS",
+      "description": "A toasted crust with tomato, melted mozzarella and pepperoni.",
+      "portionLabel": "1 slice",
+      "ingredients": "Wheat dough, tomato, mozzarella, pepperoni, herbs. Contains wheat and milk.",
+      "radius": 0.071,
+      "mass": 0.1
+    },
+    {
+      "id": "burger",
+      "name": "Beef burger",
+      "category": "MAINS",
+      "description": "A grilled beef patty, lettuce, tomato and cheese on a sesame bun.",
+      "portionLabel": "1 burger",
+      "ingredients": "Beef, wheat bun, sesame, cheese, lettuce, tomato. Contains wheat, milk and sesame.",
+      "radius": 0.052,
+      "mass": 0.18
+    },
+    {
+      "id": "salmon",
+      "name": "Herb-roasted salmon",
+      "category": "MAINS",
+      "description": "Roasted salmon with a lightly browned surface and a scattering of herbs.",
+      "portionLabel": "1 piece",
+      "ingredients": "Salmon, olive oil, herbs, lemon. Contains fish.",
+      "radius": 0.048,
+      "mass": 0.09
+    },
+    {
+      "id": "beef_skewer",
+      "name": "Grilled beef skewer",
+      "category": "MAINS",
+      "description": "Grilled beef with roasted peppers, served on an individual skewer.",
+      "portionLabel": "1 skewer",
+      "ingredients": "Beef, bell pepper, onion, olive oil, herbs.",
+      "radius": 0.063,
+      "mass": 0.08
+    },
+    {
+      "id": "rice",
+      "name": "Steamed rice",
+      "category": "SIDES",
+      "description": "Fluffy, steamed long-grain rice, served by the scoop.",
+      "portionLabel": "1 scoop",
+      "ingredients": "Long-grain rice, water.",
+      "radius": 0.034,
+      "mass": 0.06
+    },
+    {
+      "id": "pasta",
+      "name": "Tomato basil pasta",
+      "category": "SIDES",
+      "description": "Penne tossed in tomato sauce with a light sprinkling of herbs.",
+      "portionLabel": "1 scoop",
+      "ingredients": "Wheat pasta, tomato, olive oil, basil. Contains wheat.",
+      "radius": 0.039,
+      "mass": 0.065
+    },
+    {
+      "id": "broccoli",
+      "name": "Roasted broccoli",
+      "category": "SIDES",
+      "description": "Green broccoli florets, lightly roasted with olive oil.",
+      "portionLabel": "1 portion",
+      "ingredients": "Broccoli, olive oil, seasoning.",
+      "radius": 0.034,
+      "mass": 0.045
+    },
+    {
+      "id": "roasted_carrots",
+      "name": "Roasted carrots",
+      "category": "SIDES",
+      "description": "Carrot batons with caramelized edges and fresh herbs.",
+      "portionLabel": "1 portion",
+      "ingredients": "Carrots, olive oil, herbs.",
+      "radius": 0.035,
+      "mass": 0.05
+    },
+    {
+      "id": "mashed_potatoes",
+      "name": "Mashed potatoes",
+      "category": "SIDES",
+      "description": "A scoop of creamy mashed potatoes with a little butter.",
+      "portionLabel": "1 scoop",
+      "ingredients": "Potato, milk, butter. Contains milk.",
+      "radius": 0.034,
+      "mass": 0.065
+    },
+    {
+      "id": "kale_salad",
+      "name": "Garden kale salad",
+      "category": "FRESH & SWEET",
+      "description": "Leafy green kale with cucumber and a few bright cherry tomatoes.",
+      "portionLabel": "1 portion",
+      "ingredients": "Kale, cucumber, cherry tomato, olive oil, lemon.",
+      "radius": 0.042,
+      "mass": 0.045
+    },
+    {
+      "id": "bread_roll",
+      "name": "Crusty bread roll",
+      "category": "FRESH & SWEET",
+      "description": "An individual golden-brown roll with a softly floured crust.",
+      "portionLabel": "1 roll",
+      "ingredients": "Wheat flour, yeast, water, salt. Contains wheat.",
+      "radius": 0.034,
+      "mass": 0.045
+    },
+    {
+      "id": "fruit_salad",
+      "name": "Fresh fruit",
+      "category": "FRESH & SWEET",
+      "description": "A colorful portion of melon, strawberries, grapes and citrus.",
+      "portionLabel": "1 portion",
+      "ingredients": "Melon, strawberry, grape, orange.",
+      "radius": 0.037,
+      "mass": 0.06,
+      "dessert": true
+    },
+    {
+      "id": "chocolate_cake",
+      "name": "Chocolate cake",
+      "category": "FRESH & SWEET",
+      "description": "A slice of chocolate sponge with rich chocolate frosting.",
+      "portionLabel": "1 slice",
+      "ingredients": "Wheat flour, cocoa, sugar, butter, egg, milk. Contains wheat, milk and egg.",
+      "radius": 0.046,
+      "mass": 0.08,
+      "dessert": true
+    },
+    {
+      "id": "cookie",
+      "name": "Chocolate chip cookie",
+      "category": "FRESH & SWEET",
+      "description": "A golden baked cookie with scattered dark chocolate pieces.",
+      "portionLabel": "1 cookie",
+      "ingredients": "Wheat flour, butter, sugar, egg, chocolate. Contains wheat, milk and egg.",
+      "radius": 0.034,
+      "mass": 0.035,
+      "dessert": true
+    }
+  ]
+}

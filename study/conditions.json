@@ -1,0 +1,5 @@
+{
+  "default": {"screenshotsEnabled": true, "soundEnabled": true, "allowRemoval": true, "maxPortions": 40, "introSeconds": 4, "foodOrder": []},
+  "no_screenshot": {"screenshotsEnabled": false, "soundEnabled": true, "allowRemoval": true, "maxPortions": 40, "introSeconds": 4, "foodOrder": []},
+  "quiet": {"screenshotsEnabled": true, "soundEnabled": false, "allowRemoval": true, "maxPortions": 40, "introSeconds": 4, "foodOrder": []}
+}

@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#2e5443"><title>The Common Table · Godot</title><link rel="icon" href="data:,"><link rel="stylesheet" href="src/style.css"></head>
+<body>
+<header><div class="brand">THE COMMON TABLE<small>A VIRTUAL CAFETERIA</small></div><nav aria-label="Tools"><button id="menu">Menu</button><button id="help">How to play</button><button id="sound">Sound on</button></nav></header>
+<main id="stage"><canvas id="scene" aria-label="Three dimensional buffet and your plate" tabindex="0"></canvas>
+ <section id="dish" class="card" hidden aria-label="Current dish"><div class="eyebrow" id="category"></div><h1 id="food-name"></h1><p id="description"></p><p id="portion"></p><button id="details" class="soft">Dish information +</button><small id="dish-count"></small></section>
+ <section id="plate-summary" class="card" hidden aria-label="Your plate"><div class="eyebrow">YOUR PLATE</div><h2 id="total">0 portions</h2><button id="view" class="soft">View plate</button><div class="pair"><button id="undo">Undo last</button><button id="photo">Photograph</button></div><button id="review" class="primary">Review meal</button></section>
+ <div id="plate-tools" hidden><span id="selected-name">Select a portion to move or remove it.</span><button id="remove" class="primary" hidden>Remove selected portion</button></div>
+ <div id="toast" role="status" aria-live="polite"></div><div id="progress-label"></div><div id="loading" role="status"><span class="spinner"></span><h1>Setting the table</h1><p id="loading-text">Loading the dining hall…</p></div>
+</main>
+<footer><div id="progress"><span></span></div><div class="navigation"><button id="previous" disabled>Start of the buffet</button><button id="add" class="primary" disabled>Add one portion +</button><button id="next" disabled>Next dish ›</button></div><div class="footnote"><span id="save-state" role="status">Preparing your session</span><span class="keyboard-hint">ARROWS TO EXPLORE · CLICK OR DRAG TO SERVE</span><div><button id="recovery">Download recovery copy</button><button id="fullscreen">Full screen ↗</button></div></div></footer>
+<dialog id="dialog" aria-labelledby="dialog-title"><div class="dialog-top"><span class="eyebrow">THE COMMON TABLE / DINING STUDY</span><button id="close-dialog" aria-label="Close dialog">×</button></div><h2 id="dialog-title"></h2><div id="dialog-body"></div><div id="dialog-actions"></div></dialog>
+<script src="engine/game.js"></script><script type="module" src="src/app.js"></script>
+</body></html>

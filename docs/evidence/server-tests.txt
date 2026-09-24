@@ -1,0 +1,27 @@
+POST /api/sessions
+.POST /api/sessions
+GET /%2e%2e/buffet_server.py
+GET /api/config
+OPTIONS /api/sessions
+.POST /api/sessions
+POST /api/screenshots/session-one
+GET /api/screenshots/session-one/ffaffd219ad7631841e15bedd6dab13dd5cef73d8d569a81a17c618352909543
+GET /api/export.json
+.POST /api/sessions
+POST /api/sessions
+GET /
+.GET /api/export.json
+GET /api/export.json
+.POST /api/sessions
+POST /api/admin/conditions
+POST /api/sessions
+GET /api/config
+GET /researcher
+.POST /api/admin/conditions
+POST /api/admin/conditions
+POST /api/admin/conditions
+........
+----------------------------------------------------------------------
+Ran 14 tests in 3.640s
+
+OK

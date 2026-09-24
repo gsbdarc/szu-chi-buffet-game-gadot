@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Buffet survey integration sandbox</title>
+<style>body{font:14px system-ui;background:#f3f1e9;color:#263024;margin:0;padding:20px}h1{font:30px Georgia;margin:0 0 10px}p{line-height:1.6}iframe{width:100%;height:78vh;min-height:460px;border:1px solid #d2d6c9;border-radius:8px}button{background:#415d36;border:0;border-radius:5px;color:white;padding:12px 20px;cursor:pointer}button:disabled{opacity:.4}pre{white-space:pre-wrap;background:white;padding:20px;max-height:300px;overflow:auto}.badge{font-size:11px;letter-spacing:.12em;color:#516148}</style></head>
+<body><span class="badge">LOCAL INTEGRATION SANDBOX</span><h1>Buffet → survey data transfer</h1><p>This page exercises the same verified-origin completion/acknowledgement protocol used by the Qualtrics snippet. It does not write to a Qualtrics account.</p>
+<iframe id="buffet" title="Buffet integration test" allow="fullscreen"></iframe><p id="status" role="status">Waiting for a completed and durably saved meal…</p><button id="continue" disabled>Simulate survey page submission</button><pre id="output">No completion received.</pre>
+<script>
+const frame = document.getElementById('buffet');
+const url = new URL('/', location.origin);
+const incoming = new URLSearchParams(location.search);
+url.searchParams.set('parentOrigin', location.origin);
+url.searchParams.set('PROLIFIC_PID', incoming.get('PROLIFIC_PID') || 'sandbox-participant');
+url.searchParams.set('STUDY_ID', incoming.get('STUDY_ID') || 'sandbox-study');
+url.searchParams.set('SESSION_ID', incoming.get('SESSION_ID') || 'sandbox-' + Date.now());
+url.searchParams.set('condition', incoming.get('condition') || 'default');
+frame.src = url;
+let accepted;
+addEventListener('message', (event) => {
+  if (event.origin !== location.origin || event.source !== frame.contentWindow) return;
+  const message = event.data;
+  if (!message || message.type !== 'buffet:complete' || !message.session || !message.session.completed) return;
+  accepted = message.session;
+  document.getElementById('output').textContent = JSON.stringify(accepted, null, 2);
+  document.getElementById('status').textContent = 'Received ' + accepted.portions.length + ' portions. The buffet database has acknowledged this revision. Local survey submission is ready.';
+  document.getElementById('continue').disabled = false;
+  frame.contentWindow.postMessage({type:'buffet:ack',sessionId:accepted.sessionId,revision:accepted.revision}, location.origin);
+});
+document.getElementById('continue').onclick = () => {
+  localStorage.setItem('buffet-sandbox-survey-' + accepted.sessionId, JSON.stringify(accepted));
+  document.getElementById('status').textContent = 'Sandbox survey response saved in this browser. Match session ' + accepted.sessionId + ' to /api/export.json. A real Qualtrics response export still needs validation.';
+};
+</script></body></html>

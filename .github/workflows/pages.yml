@@ -1,0 +1,49 @@
+name: Deploy Godot game to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.13'
+      - uses: actions/cache@v4
+        with:
+          path: ~/.local/share/asta-godot-tools/4.7.2
+          key: godot-4.7.2-official-linux
+      - name: Install verified Godot editor and web templates
+        run: python3 tools/install_godot.py
+      - name: Check research server
+        run: python3 -m unittest discover -s server -p 'test_server.py'
+      - name: Export Godot and build standalone site
+        run: python3 tools/build_web.py --pages
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publish game
+        id: deployment
+        uses: actions/deploy-pages@v4

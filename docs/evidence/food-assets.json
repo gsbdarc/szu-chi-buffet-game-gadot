@@ -1,0 +1,92 @@
+[
+  {
+    "file": "beef_skewer.glb",
+    "bytes": 2907188,
+    "sha256": "23be6214a35bd95ad3cbe6e0f57c3d21c55932c1f13acf55b6d0d2cb5a414ef8",
+    "identicalToBabylon": true
+  },
+  {
+    "file": "bread_roll.glb",
+    "bytes": 2922148,
+    "sha256": "228a22735945a9551f777c9042a7299ed5328e173672db662916c5f997bc66b1",
+    "identicalToBabylon": true
+  },
+  {
+    "file": "broccoli.glb",
+    "bytes": 3787000,
+    "sha256": "bd3b7ce372e3a53d9fa901956768fd45519ba396811e064f9a223da1c5226b25",
+    "identicalToBabylon": true
+  },
+  {
+    "file": "burger.glb",
+    "bytes": 3971224,
+    "sha256": "68d849e6ea5d251f8bd64ea8382bfc37f3de1ae31d43a70371509ada516e134d",
+    "identicalToBabylon": true
+  },
+  {
+    "file": "chicken_parmesan.glb",
+    "bytes": 5030148,
+    "sha256": "fce9899054b4c71cc247a608bfb064eebca3a51d8b621ab09da3612651004bb2",
+    "identicalToBabylon": true
+  },
+  {
+    "file": "chocolate_cake.glb",
+    "bytes": 4072824,
+    "sha256": "4f6a4e310eaefca9490e5be62ba0f690ad4101516586734c07e0548088e0ae5d",
+    "identicalToBabylon": true
+  },
+  {
+    "file": "cookie.glb",
+    "bytes": 3004392,
+    "sha256": "ce88853a63b68a1a03b37b9a302a653ce560636fa6e9664aff837779db783f04",
+    "identicalToBabylon": true
+  },
+  {
+    "file": "fruit_salad.glb",
+    "bytes": 3594204,
+    "sha256": "526fd3c140da2a323362627052ad4caf3744055d3c3167d62c6fe10fcc18a973",
+    "identicalToBabylon": true
+  },
+  {
+    "file": "kale_salad.glb",
+    "bytes": 3333968,
+    "sha256": "4291e7f1ab16fa24cb46ba9073a865230f98fac58c3dbd57a0dcf7165e29af24",
+    "identicalToBabylon": true
+  },
+  {
+    "file": "mashed_potatoes.glb",
+    "bytes": 2713604,
+    "sha256": "d4cd9db793ab7bf78b5bff901928928881272fe2154195a94c70f89c0c9abf5e",
+    "identicalToBabylon": true
+  },
+  {
+    "file": "pasta.glb",
+    "bytes": 3030156,
+    "sha256": "923f697bee47261f874d437fde359e7d7c0b4075071610d6ab30a73ca4702196",
+    "identicalToBabylon": true
+  },
+  {
+    "file": "pizza.glb",
+    "bytes": 2431612,
+    "sha256": "c1c664e8a8026a1afbe3364aa995987916ac75330329ca8fce3ecea974fd8016",
+    "identicalToBabylon": true
+  },
+  {
+    "file": "rice.glb",
+    "bytes": 3679840,
+    "sha256": "d8c135f267071600a3217a284d24180b28d2f45dfa41c7672d8bf2d37fdf1c16",
+    "identicalToBabylon": true
+  },
+  {
+    "file": "roasted_carrots.glb",
+    "bytes": 3367976,
+    "sha256": "3544e7df5737ccba89d6c2acb7c067ea8f6660306d74985a9c835db4c2f32143",
+    "identicalToBabylon": true
+  },
+  {
+    "file": "salmon.glb",
+    "bytes": 3784588,
+    "sha256": "ed1f3e1642f07f0f58de4db96dbdb22f455ce46bb838ed1a25b44419dc054cda",
+    "identicalToBabylon": true
+  }
+]

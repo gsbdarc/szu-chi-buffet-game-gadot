@@ -1,0 +1,58 @@
+{
+  "cases": {
+    "desktop": {
+      "foods": 15,
+      "selected": 16,
+      "screenshots": 1,
+      "refreshPreserved": true,
+      "counts": {
+        "chicken_parmesan": 2,
+        "pizza": 1,
+        "burger": 1,
+        "salmon": 1,
+        "beef_skewer": 2,
+        "rice": 1,
+        "pasta": 1,
+        "broccoli": 1,
+        "roasted_carrots": 1,
+        "mashed_potatoes": 1,
+        "kale_salad": 1,
+        "bread_roll": 1,
+        "fruit_salad": 1,
+        "chocolate_cake": 1
+      },
+      "fps": 51
+    },
+    "conditions": {
+      "order": [
+        "burger",
+        "rice"
+      ],
+      "limit": 2,
+      "removalDisabled": true,
+      "screenshotsDisabled": true
+    },
+    "mobile": {
+      "portrait": [
+        390,
+        844
+      ],
+      "landscape": [
+        844,
+        390
+      ],
+      "touch": true,
+      "rotationPreserved": true
+    },
+    "offline": {
+      "queuedImageRecovered": true,
+      "completedPortions": 2
+    },
+    "iframe": {
+      "acknowledged": true,
+      "participant": "QA-iframe",
+      "sourceSession": "QA-source"
+    }
+  },
+  "errors": []
+}
