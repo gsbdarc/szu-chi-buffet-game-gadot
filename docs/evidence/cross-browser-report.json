@@ -1,0 +1,24 @@
+{
+  "webkit": {
+    "completed": true,
+    "portions": 2,
+    "screenshot": [
+      1024,
+      1024
+    ],
+    "fps": 60,
+    "errors": [],
+    "completedRefreshPreserved": true
+  },
+  "firefox": {
+    "completed": true,
+    "portions": 2,
+    "screenshot": [
+      1024,
+      1024
+    ],
+    "fps": 59,
+    "errors": [],
+    "completedRefreshPreserved": true
+  }
+}

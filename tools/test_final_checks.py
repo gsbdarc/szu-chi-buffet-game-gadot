@@ -34,10 +34,12 @@ with sync_playwright() as pw:
     touch=mobile.new_page();touch.goto('http://127.0.0.1:8770/?SESSION_ID=QA-touch-'+str(time.time_ns()));touch.wait_for_function('window.buffet',timeout=90000)
     touch.get_by_role('button',name='Explore the buffet').tap();touch.wait_for_function('!window.buffet.snapshot().moving')
     a=touch.evaluate("window.buffet.point('dish')");b=touch.evaluate("window.buffet.point('plate')")
+    assert 0 < a['x'] < 390 and 0 < b['x'] < 390, 'Projected targets must fit the mobile viewport'
     cdp=mobile.new_cdp_session(touch)
     cdp.send('Input.dispatchTouchEvent',{'type':'touchStart','touchPoints':[a]})
     for i in range(1,13):cdp.send('Input.dispatchTouchEvent',{'type':'touchMove','touchPoints':[{'x':a['x']+(b['x']-a['x'])*i/12,'y':a['y']+(b['y']-a['y'])*i/12}]})
-    cdp.send('Input.dispatchTouchEvent',{'type':'touchEnd','touchPoints':[]});touch.wait_for_timeout(600)
+    cdp.send('Input.dispatchTouchEvent',{'type':'touchEnd','touchPoints':[]})
+    touch.wait_for_function('window.buffet.snapshot().portions.length === 1',timeout=10000)
     assert len(touch.evaluate('window.buffet.snapshot().portions'))==1
     touch.screenshot(path=str(OUT/'touch-drag.png'));result['realTouchDrag']=True
     # Render the final converted textures and verify a valid empty selection completion.

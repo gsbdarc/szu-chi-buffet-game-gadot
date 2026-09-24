@@ -19,10 +19,17 @@ synthetic. Generated builds and databases are excluded from source control.
 - Static website under a repository subpath: actual Godot WASM/PCK loaded, all
   models present, no Babylon global, browser storage, photographs, downloads,
   completion recovery, replay and touch controls. No API calls or failed requests.
+- WebKit and Firefox: serving, navigation, plate view, 1024 × 1024 photograph,
+  completion, acknowledged saving and recovery of the completed meal.
+- A clean copy of the committed source imports and exports successfully without
+  pre-existing Godot caches or generated textures. GitHub's Linux build also
+  installs the pinned editor, passes the server tests and creates the web export.
 
 See [game report](evidence/game-report.json),
 [server tests](evidence/server-tests.txt), and
 [survey bridge tests](evidence/qualtrics-bridge-tests.txt).
+Additional reports: [WebKit/Firefox](evidence/cross-browser-report.json) and
+[static site](evidence/pages-report.json).
 
 ## Visual inspection
 
@@ -36,8 +43,8 @@ the displayed models and saved portion positions remain in metres.
 
 ## Remaining deployment checks
 
-Firefox/WebKit and maximum-capacity checks are being completed. The public
-GitHub Pages URL is not yet deployed. External Qualtrics/Prolific studies and
+Maximum-capacity and touch checks are being completed after correcting a viewport
+scaling issue. The public GitHub Pages URL is not yet deployed. External Qualtrics/Prolific studies and
 central participant hosting are not part of this static preview verification.
 
 Browser viewport emulation checks touch behavior and responsive layout. It does

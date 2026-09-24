@@ -7,8 +7,10 @@ with the [Babylon.js version](https://gsbdarc.github.io/Szu-Chi-game-babylon.js/
 
 Source repository: [gsbdarc/szu-chi-buffet-game-gadot](https://github.com/gsbdarc/szu-chi-buffet-game-gadot).
 
-GitHub Pages deployment is pending. The project is in its own `Asta_Godot`
-folder; its current `localhost` link is a local preview.
+**[Play the Godot version](https://gsbdarc.github.io/szu-chi-buffet-game-gadot/)**
+
+This is the public game address. The separate `Asta_Godot` folder contains the
+editable project; a `localhost` link runs only on the computer serving that folder.
 
 The GitHub Pages preview saves meals and photographs in the player's browser.
 Download your choices or a meal with photographs to keep a copy. It does not send
@@ -21,7 +23,7 @@ opens a fresh session after completion.
 - **Photograph** creates a 1024 × 1024 PNG.
 - **Review meal → Finish meal** completes and saves the meal.
 
-Once deployed, the site runs on GitHub's servers and stays available when the
+The site runs on GitHub's servers and stays available when the
 developer's computer is off. It requires WebAssembly and WebGL 2 support.
 
 ## What uses Godot

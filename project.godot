@@ -10,7 +10,7 @@ boot_splash/show_image=false
 [display]
 window/size/viewport_width=1440
 window/size/viewport_height=775
-window/stretch/mode="canvas_items"
+window/stretch/mode="disabled"
 
 [rendering]
 renderer/rendering_method="gl_compatibility"

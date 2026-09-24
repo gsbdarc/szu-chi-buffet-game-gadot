@@ -34,13 +34,13 @@ def site(url):
         yield url.rstrip('/') + '/'
         return
     with tempfile.TemporaryDirectory(prefix='buffet-pages-') as temporary:
-        build(Path(temporary) / 'Szu-Chi-game-godot')
+        build(Path(temporary) / 'szu-chi-buffet-game-gadot')
         handler = functools.partial(QuietHandler, directory=temporary)
         server = ThreadingHTTPServer(('127.0.0.1', 0), handler)
         thread = threading.Thread(target=server.serve_forever, daemon=True)
         thread.start()
         try:
-            yield f'http://127.0.0.1:{server.server_port}/Szu-Chi-game-godot/'
+            yield f'http://127.0.0.1:{server.server_port}/szu-chi-buffet-game-gadot/'
         finally:
             server.shutdown()
             server.server_close()
