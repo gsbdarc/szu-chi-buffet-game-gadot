@@ -1,0 +1,12 @@
+{
+  "capacity": {
+    "portions": 40,
+    "withinPlate": true
+  },
+  "keyboard": true,
+  "overviewInputGuard": true,
+  "freshPreview": true,
+  "realTouchDrag": true,
+  "emptyMeal": true,
+  "errors": []
+}

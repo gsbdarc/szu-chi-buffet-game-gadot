@@ -24,12 +24,22 @@ synthetic. Generated builds and databases are excluded from source control.
 - A clean copy of the committed source imports and exports successfully without
   pre-existing Godot caches or generated textures. GitHub's Linux build also
   installs the pinned editor, passes the server tests and creates the web export.
+- Forty portions stay inside the plate boundary, with the complete stack visible
+  in the photograph. Keyboard navigation/serving, overview input guard, fresh
+  preview identities and empty-meal completion pass.
+- Actual Chromium touch events drag food to the plate in a 390 × 844 viewport.
+  Godot renders at the canvas dimensions without letterboxing or mismatched
+  picking coordinates. The earlier fixed viewport issue is corrected.
+- Participant actions are disabled while a photograph is being saved; the image
+  and subsequent completion both reach the research API.
 
 See [game report](evidence/game-report.json),
 [server tests](evidence/server-tests.txt), and
 [survey bridge tests](evidence/qualtrics-bridge-tests.txt).
 Additional reports: [WebKit/Firefox](evidence/cross-browser-report.json) and
 [static site](evidence/pages-report.json).
+Also see [capacity and touch](evidence/final-checks.json) and
+[capture guard](evidence/capture-guard.json).
 
 ## Visual inspection
 
@@ -41,11 +51,23 @@ the displayed models and saved portion positions remain in metres.
 
 ![Godot plate](evidence/plate.png)
 
-## Remaining deployment checks
+## Public deployment
 
-Maximum-capacity and touch checks are being completed after correcting a viewport
-scaling issue. The public GitHub Pages URL is not yet deployed. External Qualtrics/Prolific studies and
-central participant hosting are not part of this static preview verification.
+[Play the published Godot build](https://gsbdarc.github.io/szu-chi-buffet-game-gadot/).
+Runtime commit: `305d1612fd7ab461b7f127ea1c6faaca19fdd0ce`.
+[GitHub Actions build and deployment](https://github.com/gsbdarc/szu-chi-buffet-game-gadot/actions/runs/36061978840)
+completed successfully. The owner approved making this new repository public.
+
+The full static-site check also passed against this public HTTPS URL: actual
+Godot engine/resources, 15 foods, serving, persisted meals and photographs,
+downloads, refresh, completion, replay and mobile controls. No API calls, failed
+HTTP requests or JavaScript page errors were observed. The public site saves on
+the player's device and does not collect records centrally.
+
+## Limits
+
+External Qualtrics/Prolific studies and central participant hosting are not part
+of this static preview verification.
 
 Browser viewport emulation checks touch behavior and responsive layout. It does
 not establish performance or compatibility on every physical phone or tablet.

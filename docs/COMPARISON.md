@@ -42,8 +42,9 @@ The HTML interface is not a separate native desktop/mobile Godot interface.
 
 The Godot source is separate from `Asta_Babylon` and `Asta_test`. The target
 repository is `gsbdarc/szu-chi-buffet-game-gadot` (spelling supplied by the owner).
-The Babylon version is available at
-https://gsbdarc.github.io/Szu-Chi-game-babylon.js/ .
+
+- [Play Godot](https://gsbdarc.github.io/szu-chi-buffet-game-gadot/)
+- [Play Babylon.js](https://gsbdarc.github.io/Szu-Chi-game-babylon.js/)
 
 Godot's single-threaded export avoids the cross-origin isolation requirement of
 threaded exports. GitHub Pages serves the static game; it cannot run the included
